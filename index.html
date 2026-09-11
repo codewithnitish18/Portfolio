@@ -1,94 +1,700 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title>
+
+    <title>Nitish Yadav | Aspiring Software Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Boxicons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
+   
 </head>
-<body>
-    <header class="header">
-        <a href="#home" class="logo">NITISH <span> YADAV </span>
-         </a>
 
-         <i class="bx bx-menu" id="menu-icon"></i>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            NITISH <span>YADAV</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <button class="gradient-btn">Contact Me</button>
+        <a href="#contact" class="gradient-btn">
+            Contact Me
+        </a>
+
     </header>
 
-    <section class="home" id="home">
-       <div class="home-content">
-         <!-- <p>Hey, I'm Nitish 👋</p>
 
-        <h1>Code. Create. Solve. Repeat.</h1>
-           <p class="description">
-            I'm an MCA student passionate about turning problems into
-            simple, meaningful digital solutions. From crafting
-            interfaces with HTML, CSS & JavaScript to building backend
-            logic with Python & Flask, I'm constantly learning,
-            experimenting, and building.
-        </p>
-         <p class="tagline">
-            Currently turning curiosity into code — one project at a time.
-        </p> -->
-         <h1>Hi, It's <span>Nitish Yadav</span></h1>
-            <h3>
-                I'm a <span>Web Developer</span>
-            </h3>
-            <p>
-                I'm an MCA student passionate about turning problems into
-            simple, meaningful digital solutions. From crafting
-            interfaces with HTML, CSS & JavaScript to building backend
-            logic with Python & Flask, I'm constantly learning,
-            experimenting, and building.
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="hero-label">
+                HELLO, I'M NITISH
             </p>
+
+            <h1>
+                I'm still <span>becoming</span><br>
+                the developer<br>
+                I want to be.
+            </h1>
+
+            <h3>
+                And I'm <span>building my way there.</span>
+            </h3>
+
+            <p class="home-description">
+                Learning through problems. Building through curiosity.
+                Improving with every project.
+            </p>
+
+
+            <div class="btn-group">
+
+                <a href="#projects" class="btn">
+                    Explore My Work
+                    <i class="bx bx-right-arrow-alt"></i>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Let's Connect
+                </a>
+
+            </div>
+
+
             <div class="social-icons">
-                <a href="#">    
+
+                <a href="https://github.com/codewithnitish18" aria-label="GitHub">
                     <i class="bx bxl-github"></i>
                 </a>
-                <a href="#">    
+
+                <a href="https://www.linkedin.com/in/nitish-yadav-7b03a62b4/" aria-label="LinkedIn">
                     <i class="bx bxl-linkedin-square"></i>
                 </a>
-                <a href="#">    
+
+                <!-- <a href="#" aria-label="Instagram">
                     <i class="bx bxl-instagram-alt"></i>
-                </a>
-                <a href="#">    
-                    <i class="bx bxl-twitter"></i>
-                </a>
-            </div>
-            <div class="btn-group">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#contact" class="btn">Contact</a>
+                </a> -->
 
             </div>
+
         </div>
-        <div class="home-img">
-            <img src="Nitish.jpeg" alt="Home Image">
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="home-visual">
+
+            <div class="image-glow"></div>
+
+
+            <div class="home-img">
+                <img
+                    src="Nitish.jpeg"
+                    alt="Nitish Yadav"
+                >
+            </div>
+
+
+            <!-- Floating Cards -->
+
+            <div class="floating-card card-one">
+                <i class="bx bx-code-alt"></i>
+                <span>BUILD</span>
+            </div>
+
+
+            <div class="floating-card card-two">
+                <i class="bx bx-brain"></i>
+                <span>LEARN</span>
+            </div>
+
+
+            <div class="floating-card card-three">
+                <i class="bx bx-bulb"></i>
+                <span>CREATE</span>
+            </div>
+
+
+            <!-- Currently Building -->
+
+            <div class="building-card">
+
+                <small>CURRENTLY BUILDING</small>
+
+                <strong>RecallQ</strong>
+
+                <span>
+                    AI × Web Development
+                </span>
+
+            </div>
+
         </div>
-           
+
+
+        <!-- Scroll -->
+
+        <div class="scroll-indicator">
+
+            <span>SCROLL TO DISCOVER</span>
+
+            <i class="bx bx-down-arrow-alt"></i>
+
+        </div>
+
     </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section class="about" id="about">
 
         <div class="about-img">
-            <img src="Nitish Suit.jpeg" alt="About Image">
-        </div>
-        <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <p></p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
 
+            <img
+                src="Nitish Suit.jpeg"
+                alt="Nitish Yadav"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                GET TO KNOW ME BETTER
+            </p>
+
+
+            <h2>
+                About <span>Me</span>
+            </h2>
+
+
+            <h3>
+                Building With Curiosity.
+                <span>Growing With Every Project.</span>
+            </h3>
+
+
+            <p class="about-text">
+                I'm Nitish Yadav, an MCA student and aspiring software
+                developer who enjoys turning ideas and problems into
+                simple, meaningful digital experiences. I'm building
+                my foundation in Python, Data Structures & Algorithms,
+                JavaScript, and Web Development.
+            </p>
+
+
+            <p class="about-text">
+                For me, development isn't just about writing code.
+                It's about understanding a problem, breaking it into
+                smaller pieces, experimenting with solutions, and
+                continuously improving. I'm currently focused on
+                strengthening my fundamentals while building
+                real-world projects that turn what I learn into practice.
+            </p>
+
+
+            <div class="about-highlights">
+
+                <div class="highlight">
+
+                    <i class="bx bx-code-alt"></i>
+
+                    <div>
+                        <h4>Building</h4>
+                        <p>Real-world projects</p>
+                    </div>
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <i class="bx bx-brain"></i>
+
+                    <div>
+                        <h4>Learning</h4>
+                        <p>DSA & problem solving</p>
+                    </div>
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <i class="bx bx-devices"></i>
+
+                    <div>
+                        <h4>Exploring</h4>
+                        <p>Modern web development</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#contact" class="btn">
+                Let's Connect
+                <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+        </div>
+
+    </section>
+    <section class="skills" id="skills">
+
+    <div class="skills-heading">
+        <p class="section-label">WHAT I WORK WITH</p>
+        <h2>My <span>Skills</span></h2>
+        <p>
+            Technologies and concepts I'm learning and using to turn ideas
+            into practical solutions.
+        </p>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bxl-python"></i>
+            </div>
+            <div class="skill-info">
+                <h3>Python</h3>
+                <p>Core Python, OOP & problem solving</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bx-data"></i>
+            </div>
+            <div class="skill-info">
+                <h3>DSA</h3>
+                <p>Data structures, algorithms & logic building</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bxl-javascript"></i>
+            </div>
+            <div class="skill-info">
+                <h3>JavaScript</h3>
+                <p>DOM, functions, arrays & interactive web features</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bxl-html5"></i>
+            </div>
+            <div class="skill-info">
+                <h3>HTML</h3>
+                <p>Semantic and accessible web structure</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bxl-css3"></i>
+            </div>
+            <div class="skill-info">
+                <h3>CSS</h3>
+                <p>Responsive layouts, animations & modern UI</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bx-server"></i>
+            </div>
+            <div class="skill-info">
+                <h3>Flask</h3>
+                <p>Currently learning backend development</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bx-data"></i>
+            </div>
+            <div class="skill-info">
+                <h3>SQL</h3>
+                <p>Database queries & data management</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="bx bxl-git"></i>
+            </div>
+            <div class="skill-info">
+                <h3>Git & GitHub</h3>
+                <p>Version control & project collaboration</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="projects" id="projects">
+
+    <div class="projects-heading">
+        <p class="section-label">WHAT I'M BUILDING</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p>
+            Ideas I'm turning into practical solutions through code,
+            curiosity, and continuous learning.
+        </p>
+    </div>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card featured-project">
+
+            <div class="project-number">01</div>
+
+            <div class="project-content">
+                <span class="project-status">CURRENTLY BUILDING</span>
+
+                <h3>RecallQ</h3>
+
+                <p class="project-tagline">
+                    Find what you remember, not where you stored it.
+                </p>
+
+                <p class="project-description">
+                    An AI-powered digital memory and intelligent file management
+                    concept designed to help users find forgotten photos,
+                    screenshots, documents and notes using natural-language search.
+                </p>
+
+                <div class="project-tech">
+                    <span>AI</span>
+                    <span>OCR</span>
+                    <span>Semantic Search</span>
+                    <span>Web</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    Explore Project
+                    <i class="bx bx-right-arrow-alt"></i>
+                </a>
+            </div>
+
+            <div class="project-visual">
+                <i class="bx bx-search-alt-2"></i>
+                <span>SEARCH YOUR MEMORY</span>
+            </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="project-card">
+
+            <div class="project-number">02</div>
+
+            <div class="project-content">
+                <span class="project-status">IN DEVELOPMENT</span>
+
+                <h3>KaushalSetu</h3>
+
+                <p class="project-tagline">
+                    Connecting skills with opportunities.
+                </p>
+
+                <p class="project-description">
+                    A digital platform concept focused on helping users build,
+                    showcase and discover practical skills while creating a
+                    stronger connection between talent and opportunities.
+                </p>
+
+                <div class="project-tech">
+                    <span>Web</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    Explore Project
+                    <i class="bx bx-right-arrow-alt"></i>
+                </a>
+            </div>
+
+            <div class="project-visual">
+                <i class="bx bx-network-chart"></i>
+                <span>CONNECT • GROW • DISCOVER</span>
+            </div>
+
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="project-card">
+
+            <div class="project-number">03</div>
+
+            <div class="project-content">
+                <span class="project-status">PROJECT CONCEPT</span>
+
+                <h3>Krishi Mitra</h3>
+
+                <p class="project-tagline">
+                    Helping farmers make better-informed decisions.
+                </p>
+
+                <p class="project-description">
+                    A farmer-focused digital solution aimed at providing useful
+                    information about crop value, fair buyer prices and
+                    government schemes in a simple and accessible way.
+                </p>
+
+                <div class="project-tech">
+                    <span>Web</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    Explore Project
+                    <i class="bx bx-right-arrow-alt"></i>
+                </a>
+            </div>
+
+            <div class="project-visual">
+                <i class="bx bx-leaf"></i>
+                <span>INFORMATION • VALUE • ACCESS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+        <p class="section-label">LET'S CONNECT</p>
+        <h2>Let's Build Something <span>Together.</span></h2>
+        <p>
+            Have an idea, opportunity, or just want to say hello?
+            I'd love to hear from you.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Let's talk.</h3>
+
+            <p>
+                I'm always open to discussing new opportunities,
+                interesting projects, internships, or ideas worth building.
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div>
+                        <span>Email</span>
+                        <p>ethereal.nitish05@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bx bx-map"></i>
+                    </div>
+                    <div>
+                        <span>Location</span>
+                        <p>India</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-socials">
+
+                <a href="#" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form">
+
+            <div class="input-group">
+
+                <div class="input-box">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Your Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="input-box">
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What would you like to discuss?"
+                    required
+                >
+            </div>
+
+            <div class="input-box">
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Send Message
+                <i class="bx bx-send"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <a href="#home" class="logo">NITISH <span>YADAV</span></a>
+
+            <p>
+                Aspiring software developer focused on learning,
+                building, and solving meaningful problems.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+
+            <a href="https://github.com/codewithnitish18" aria-label="GitHub">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nitish-yadav-7b03a62b4/" aria-label="LinkedIn">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <!-- <a href="#" aria-label="Instagram">
+                <i class="bx bxl-instagram-alt"></i>
+            </a> -->
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Nitish Yadav. Built with curiosity & code.</p>
+
+        <a href="#home" aria-label="Back to top">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
+    </div>
+
+</footer>
+ <script src="script.js"></script>
 </body>
+
 </html>
